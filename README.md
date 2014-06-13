@@ -12,4 +12,4 @@ Here are things:
 
 * HTML
 * CSS
-*JS
+* JS
