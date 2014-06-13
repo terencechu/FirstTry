@@ -1,11 +1,66 @@
 <!doctype html>
 <head>
 <title>Greg</title>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+	
+	$("#hide").click(function() {
+		$("#box").hide(5000);
+		});
+	
+	$("#toggle").click(function() {
+		$("#box").toggle(5000);
+		});
+		
+	$("#show").click(function() {
+		$("#box").show(5000);
+		});
+		
+	$("#slideup").click(function() {
+		$("#box").slideup(5000);
+		});
+		
+	$("#slidedown").click(function() {
+		$("#box").slidedown(5000);
+		});
+		
+		$("#addcss").click(function() {
+		$("#box").addClass("info");
+		});
+		
+	$("#removecss").click(function() {
+		$("#box").addClass("noinfo");
+		});
+	
+	});
+	
+</script>
+<style>
+	#box {
+		width: 400px;
+		height: 300px;
+		background: cornflowerblue;
+		}
+		
+	
+</style>
+	
 </head>
 <body>
-<h1> GitHub Test Changed </h1>
+<h1> jQuery Test </h1>
+<ul>
+	<li id="hide"><a href="#">Hide</a></li>
+	<li id="toggle">Toggle</li>
+	<li id="show"><a href="#">Show</a></li>
+	<li id="slideup">SlideUp</li>
+	<li id="slidedown">SlideDown</li>
+	<li id="addcss">AddCSS</li>
+	<li id="removecss">RemoveCSS</li>
+</ul>
 <p>Hi my name is Albert.</p>
-<p>Added on website.</p>
+<p>BUTTONS HERE</p>
+<div id="box">Testing jQuery functions</div>
 
 </body>
 </html>
